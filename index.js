@@ -26,13 +26,13 @@ async function handleRequest(request) {
 }
 
 async function handleSiteRequest(request) {
-  const url = new URL(request.url)
-
-  if (url.pathname === '/' || url.pathname === '') {
-    return new Response(html, {
-      headers: { 'content-type': contentTypes.html }
-    })
-  }
+//   const url = new URL(request.url)
+//
+//   if (url.pathname === '/' || url.pathname === '') {
+//     return new Response(html, {
+//       headers: { 'content-type': contentTypes.html }
+//     })
+//   }
 
   return new Response('Not found', { status: 404 })
 }
